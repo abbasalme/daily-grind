@@ -34,9 +34,14 @@ console.log(queryString);
     
 //separate query string parameters
 const urlParams = new URLSearchParams(queryString);
- 
+
 
 //today = 3;
+
+if(urlParams.has("day")){//from querystring
+    today = urlParams.get("day");
+ }
+ 
 
 switch(today){
 
@@ -54,18 +59,15 @@ switch(today){
    break;
       
    case 2:
-         today = "Tuesday";
-
-         case 1:
-            today = "Monday";
-            coffee = {
-            name: "Bubble Tea",
-            color: "pink",
-            pic: "images/bubble-tea.jpg",
-            alt: "A picture of Bubble Tea ",
-            day: "Monday",
-            desc: `I like me some bubble tea! `
-            }; 
+    today = "Tuesday";
+    coffee = {
+       name:"Drip",
+       color: "black",
+       pic: "images/drip.jpg",
+       alt: "A picture of a drip coffee",
+       day: "Tuesday",
+       desc: `Give it to me straight!`
+    };
 
 
     break;
