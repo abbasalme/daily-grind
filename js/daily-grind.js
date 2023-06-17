@@ -26,6 +26,16 @@ let myDate = new Date();
 
 let today = myDate.getDay();
 
+//use location object to access querystring (address bar)
+const queryString = window.location.search;
+    
+//output to console    
+console.log(queryString);
+    
+//separate query string parameters
+const urlParams = new URLSearchParams(queryString);
+ 
+
 //today = 3;
 
 switch(today){
@@ -36,7 +46,7 @@ switch(today){
         name: "Drip",
         color: "black",
         pic: "images/drip.jpg",
-        alt: "A picture of drip coffee ",
+        alt: "A picture of drip coffee ", 
         day: "Tuesday",
         desc: `Give me to it straight! `
         }; 
@@ -71,6 +81,8 @@ switch(today){
 }
 
 document.getElementById("coffee-cup").innerHTML = coffeeTemplate(coffee);
+
+document.querySelector("html").style.backgroundColor = coffee.color; 
 
 
 //alert(today);
