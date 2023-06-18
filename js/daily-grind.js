@@ -14,9 +14,8 @@
 function coffeeTemplate(coffee){
     return `<p>
             <img src="${coffee.pic}" alt="${coffee.alt}" id="coffee" />
-                <strong class="feature">${coffee.day} Coffee Special:</strong> ${coffee.day}'s daily coffee special is <strong class="feature">${coffee.name}</strong>, ${coffee.desc}</p>
-    
-      `;
+                <strong class="feature">${coffee.day} Coffee Special:</strong> ${coffee.day}'s daily coffee special is <strong class="feature">${coffee.name}</strong>, ${coffee.desc}</p>`
+      ;
     }
     
 
@@ -50,7 +49,15 @@ switch(today){
 
     case 0:
         today = "Sunday";
-        
+        coffee = {
+            name:"Caramel Latte",
+            color: "pink",
+            pic: "images/caramel-latte.jpg",
+            alt: "A picture of a caramel latte",
+            day: "Sunday",
+            desc: `Life is better with caramel!`
+         };
+
      break;
 
 
@@ -75,12 +82,13 @@ switch(today){
        pic: "images/drip.jpg",
        alt: "A picture of a drip coffee",
        day: "Tuesday",
-       desc: `Give it to me straight!`
+       desc: `Give it to me straight!` 
     };
     break;
 
     case 3:
         today = "Wednesday";
+        
 
      break;
 
