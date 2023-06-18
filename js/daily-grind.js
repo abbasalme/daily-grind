@@ -101,16 +101,41 @@ switch(today){
 
      case 4:
         today = "Thursday";
+        coffee = {
+            name:"Frappaccino",
+            color: "brown",
+            pic: "images/frappaccino.jpg",
+            alt: "A picture of a frappaccino",
+            day: "Thursday",
+            desc: `Indulge in Frosty Bliss!`
+         };
         
      break;
 
      case 5:
         today = "Friday";
+        coffee = {
+            name:"Mocha",
+            color: "grey",
+            pic: "images/mocha.jpg",
+            alt: "A picture of a mocha",
+            day: "Friday",
+            desc: `Unleash Mocha Marvel!`
+         };
+        
         
      break;
 
      case 6:
         today = "Saturday";
+        coffee = {
+            name:"Pumpkin Spice Latte",
+            color: "red",
+            pic: "images/pumpkin-spice-latte.jpg",
+            alt: "A picture of a pumpkin spice latte",
+            day: "Saturday",
+            desc: `Embrace Autumn's Delight!`
+         };
         
      break;
 
