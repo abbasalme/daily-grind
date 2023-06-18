@@ -51,7 +51,7 @@ switch(today){
         today = "Sunday";
         coffee = {
             name:"Caramel Latte",
-            color: "pink",
+            color: "green",
             pic: "images/caramel-latte.jpg",
             alt: "A picture of a caramel latte",
             day: "Sunday",
@@ -88,7 +88,14 @@ switch(today){
 
     case 3:
         today = "Wednesday";
-        
+        coffee = {
+            name:"Cold Brew",
+            color: "brown",
+            pic: "images/cold-brew.jpg",
+            alt: "A picture of a cold brew",
+            day: "Wednesday",
+            desc: `Simply made cold brew!`
+         };
 
      break;
 
