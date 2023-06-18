@@ -90,7 +90,7 @@ switch(today){
         today = "Wednesday";
         coffee = {
             name:"Cold Brew",
-            color: "brown",
+            color: "blue",
             pic: "images/cold-brew.jpg",
             alt: "A picture of a cold brew",
             day: "Wednesday",
